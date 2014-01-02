@@ -26,7 +26,6 @@ public class SplashScreen extends Activity {
     protected void onStart() {
         super.onStart();
         Log.i(TAG_LOG, "onStart");
-        //this.overridePendingTransition(R.anim.fade_in, R.anim.fade_out);
     }
 
     @Override

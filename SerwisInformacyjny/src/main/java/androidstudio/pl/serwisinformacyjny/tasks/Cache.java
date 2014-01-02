@@ -1,5 +1,6 @@
 package androidstudio.pl.serwisinformacyjny.tasks;
 
+import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
@@ -30,9 +31,10 @@ public class Cache {
         this.resources = context.getResources();
         this.mCurrentTasks = new ArrayList<Integer>();
         this.mBitmapCache = new LruCache<Integer, Bitmap>(size) {
+            @TargetApi(Build.VERSION_CODES.HONEYCOMB_MR1)
             @Override
             protected int sizeOf(Integer key, Bitmap bitmap) {
-                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB) {
+                if (Build.VERSION.SDK_INT < Build.VERSION_CODES.HONEYCOMB_MR1) {
                     return bitmap.getHeight() * bitmap.getWidth() * 2;
                 }
                 return bitmap.getByteCount();
