@@ -22,7 +22,6 @@ import java.util.List;
 
 import androidstudio.pl.serwisinformacyjny.adapters.CustomExpandableListAdapter;
 import androidstudio.pl.serwisinformacyjny.adapters.CustomGalleryAdapter;
-import androidstudio.pl.serwisinformacyjny.animation.AnimationsClass;
 
 @SuppressWarnings("deprecation")
 public class MainActivity extends Activity {
@@ -104,7 +103,7 @@ public class MainActivity extends Activity {
         expandableListView.setDividerHeight((int) (resources.getDimension(R.dimen.explistdividerheight)));
         expandableListView.setOnGroupClickListener(onGroupClickListener);
         expandableListView.setOnChildClickListener(onChildClickListener);
-        expandableListView.setLayoutAnimation(AnimationsClass.createAnimationSet());
+        //expandableListView.setLayoutAnimation(AnimationsClass.createAnimationSet());
 
         mainLayout.addView(expandableListView, layoutParamsExpandableList);
         this.setContentView(mainLayout);
