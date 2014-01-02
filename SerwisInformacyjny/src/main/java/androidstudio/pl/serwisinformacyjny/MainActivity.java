@@ -75,7 +75,6 @@ public class MainActivity extends Activity {
         headerView.addView(imageView);
         headerView.addView(gallery, galleryLayoutParams);
 
-
         final ImageView imageViewFooter = new ImageView(this);
         imageViewFooter.setImageBitmap(decodeBitmap(R.drawable.footerview));
         imageViewFooter.setId(23111476);
