@@ -42,7 +42,6 @@ public class News extends Activity {
         listViewNewsAdaspter = new ListViewNewsAdapter(this, getNews(), getImagesIds(), screenWidth);
         final ListView listViewNews = (ListView) findViewById(R.id.listViewNews);
         listViewNews.setAdapter(listViewNewsAdaspter);
-        //listViewNews.setLayoutAnimation(AnimationsClass.createAnimationSet());
         listViewNews.setOnScrollListener(onScrollListener);
     }
 
