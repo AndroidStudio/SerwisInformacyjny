@@ -95,7 +95,7 @@ public class MainActivity extends Activity {
         expandableListView.addHeaderView(headerView, null, false);
         expandableListView.addFooterView(imageViewFooter, null, false);
         expandableListView.setAdapter(expandableListAdapter);
-        expandableListView.setSelector(new StateListDrawable());
+       // expandableListView.setSelector(new StateListDrawable());
         expandableListView.setGroupIndicator(states);
         expandableListView.setChildDivider(resources.getDrawable(R.color.dividerGroup));
         expandableListView.setDivider(resources.getDrawable(R.color.dividerGroup));
