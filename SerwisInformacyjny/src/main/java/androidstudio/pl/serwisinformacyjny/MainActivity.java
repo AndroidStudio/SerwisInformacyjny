@@ -22,6 +22,7 @@ import java.util.List;
 
 import androidstudio.pl.serwisinformacyjny.adapters.CustomExpandableListAdapter;
 import androidstudio.pl.serwisinformacyjny.adapters.CustomGalleryAdapter;
+import androidstudio.pl.serwisinformacyjny.animation.AnimationsClass;
 
 @SuppressWarnings("deprecation")
 public class MainActivity extends Activity {
@@ -95,14 +96,14 @@ public class MainActivity extends Activity {
         expandableListView.addHeaderView(headerView, null, false);
         expandableListView.addFooterView(imageViewFooter, null, false);
         expandableListView.setAdapter(expandableListAdapter);
-       // expandableListView.setSelector(new StateListDrawable());
+        expandableListView.setSelector(new StateListDrawable());
         expandableListView.setGroupIndicator(states);
         expandableListView.setChildDivider(resources.getDrawable(R.color.dividerGroup));
         expandableListView.setDivider(resources.getDrawable(R.color.dividerGroup));
         expandableListView.setDividerHeight((int) (resources.getDimension(R.dimen.explistdividerheight)));
         expandableListView.setOnGroupClickListener(onGroupClickListener);
         expandableListView.setOnChildClickListener(onChildClickListener);
-        //expandableListView.setLayoutAnimation(AnimationsClass.createAnimationSet());
+        expandableListView.setLayoutAnimation(AnimationsClass.createAnimationSet());
 
         mainLayout.addView(expandableListView, layoutParamsExpandableList);
         this.setContentView(mainLayout);
