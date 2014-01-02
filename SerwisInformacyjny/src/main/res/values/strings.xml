@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Serwis Informacyjny</string>
+    <string name="baner">baner</string>
+    <string name="news">Aktualności</string>
+    <string name="imageViewNews">image</string>
+
+</resources>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dip">
+
+    <TextView
+        android:id="@+id/textViewNews"
+        android:padding="10dip"
+        android:textColor="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/news"
+        android:background="@drawable/shapegroup" />
+
+    <ListView
+        android:id="@+id/listViewNews"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:dividerHeight="5dp"
+        android:divider="@color/dividerGroup" />
+</LinearLayout>

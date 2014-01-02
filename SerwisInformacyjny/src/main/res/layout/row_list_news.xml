@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp"
+    android:background="@drawable/shapechild">
+
+    <RelativeLayout
+        android:id="@+id/imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingLeft="5dip"
+        android:paddingRight="5dp">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_centerInParent="true"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:contentDescription="@string/imageViewNews"
+            android:background="@drawable/shapechild" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_toRightOf="@+id/imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0099ff"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_toRightOf="@+id/imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textViewTitle"
+        android:textColor="#ea861e" />
+
+    <TextView
+        android:id="@+id/textViewDescription"
+        android:layout_toRightOf="@+id/imageContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#999"
+        android:maxLines="2"
+        android:ellipsize="end"
+        android:layout_below="@+id/textViewDate" />
+</RelativeLayout>
